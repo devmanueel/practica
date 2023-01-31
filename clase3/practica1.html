@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_practica_1</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="user" id="nombre">
+                <p>Eres Socio?</p>
+                <label for="Si-socio">Si, soy socio</label>
+                <input type="radio" name="R-socio" id="Si-socio">
+                <label for="No-socio">No, soy socio</label>
+                <input type="radio" name="R-socio" id="No-socio">
+                <br>
+                <br>
+                <label for="correo">Email</label>
+                <input type="email" name="email" id="correo">
+                <br>
+                <br>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="password" id="contraseña">
+            </fieldset>
+            <fieldset>
+                <legend>Datos de Reserva</legend>
+                <label for="Xedad">Edad:</label>
+                <select name="Edad" id="Xedad">
+                        <option selected>Menor de 18</option>
+                        <option>Mayor de 18</option>
+                </select>
+                <br>
+                <br>
+                <label for="turno">Seleccione la fecha y hora de reserca: </label>
+                <br>
+                <br>
+                <input type="date" name="fecha-turno" id="turno">
+                <input type="time" name="hora-turno" id="turno">
+                <br>
+                <br>
+                <textarea name="comments" id="comentarios" cols="16" rows="7">Comentarios</textarea>
+                <br>
+                <br>
+            </fieldset>
+            <br>
+            <input type="checkbox" name="A-Condiciones" id="Condiciones">
+            <label for="Condiciones">Acepto las condiciones</label>
+            <br>
+            <br>
+            <input type="button" value="ENVIAR">
+            </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

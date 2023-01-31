@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>c3-formularios</title>
+  </head>
+  <body>
+    <header>
+      
+    </header>
+    <main>
+      <h1>c3-formularios</h1>
+      <form action="">
+        <fieldset>
+          <legend>login</legend>
+          <label for="nombre">User:</label>
+          <input type="text" name="nombre" id="nombre" value="ingrese user" />
+          <!-- nombre es el nombre con que se manda el elemento -->
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" />
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            cols="50"
+            rows="10"
+          ></textarea>
+          <br />
+          <label for="si">cobra alguna asignacion</label>
+          <input type="checkbox" name="si" id="M" />
+          <h3>seleccione genero</h3>
+          <label for="masculino">M</label>
+          <input type="radio" name="genero" id="maculino" />
+          <label for="femenino">F</label>
+          <input type="radio" name="genero" id="femenino" />
+          <label for="Otro_g">Otro</label>
+          <input type="radio" name="genero" id="Otro_g" />
+          <br />
+          <input type="button" value="Enviar" id="btn-send" />
+        </fieldset>
+        <label for="DNI">DNI: </label>
+        <input type="number" name="DNI" id="DNI" />
+        <br />
+        <!-- ejemplo de listas -->
+        <label for="groups">Lista</label>
+        <select id="groups" name="groups">
+          <optgroup label="fruits">
+            <option>Banana</option>
+            <option selected>Cherry</option>
+            <option>Lemon</option>
+          </optgroup>
+          <optgroup label="vegetables">
+            <option>Carrot</option>
+            <option>Eggplant</option>
+            <option>Potato</option>
+          </optgroup>
+        </select>
+      </form>
+      <!-- otro ejemplod de lista -->
+      Listas ejemplo:
+      <br>
+      <select multiple id="groups" name="groups" size="4">
+        <option>Banana</option>
+        <option selected>Cherry</option>
+        <option>Lemon</option>
+        <option>Carrot</option>
+        <option>Eggplant</option>
+        <option>Potato</option>
+      </select>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
